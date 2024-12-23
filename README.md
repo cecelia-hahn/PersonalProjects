@@ -1,2 +1,2 @@
 # Personal Learning Projects
-Dumping all the stuffs in here, no matter how simple
+Dumping all the stuff in here, no matter how simple
