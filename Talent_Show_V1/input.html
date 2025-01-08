@@ -17,7 +17,190 @@
         
     <main>
         <h1>LHS Talent Show Scoresheet</h1>
-        <p>This is where the judges will input their scores</p>
+        <p>This is where you will score each act. Use the dropdowns to select the act and point values for each part of the rubric. Acts are judged based on quality, stage presence, performance/preparation, and creativity. A score of 0-2 would be "poor", 3 is "fair", 4 is "good", and 5 is "excellent".</p>
+
+        <!--act dropdown-->
+        <form>
+            <label for="act">Select Act:</label>
+            <select id="act" name="act">
+                <option value="act1">Act 1</option>
+                <option value="act2">Act 2</option>
+                <option value="act3">Act 3</option>
+            </select>
+        </form>
+        <br>
+
+        <!--quality-->
+        <table>
+            <tr>
+                <td><strong>Quality</strong></td>
+                <td><em>Excellent (5)</em></td>
+                <td><em>Good (4)</em></td>
+                <td><em>Fair (3)</em></td>
+                <td><em>Poor (0-2)</em></td>
+            </tr>
+            <tr>
+                <td><form for="quality">
+                    <select id="quality" name="quality">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form></td>
+                <td>Superior and impressive
+                    <br>quality for age and
+                    <br>experience. Performs
+                    <br>professionally.
+                    <br>Consistently in tune and
+                    <br>with good tone/timing;
+                    <br>polished moves/routine.</td>
+                <td>Appropriate quality for
+                    <br>age, and experience.
+                    <br>Performance is mostly in
+                    <br>tune with good
+                    <br>tone/timing, solid
+                    <br>moves/routine. Few
+                    <br>mistakes.</td>
+                <td>Not quite the quality
+                    <br>expected for age, and
+                    <br>experience. Sings, acts,
+                    <br>plays, dances, and/or
+                    <br>performs inconsistently.
+                    <br>Some mistakes.</td>
+                <td>Quality of talent is not
+                    <br>up to standard. Is not
+                    <br>in tune, has poor tone
+                    <br>quality, imprecise
+                    <br>moves/routine or bad
+                    <br>acting. Many mistakes.</td>
+            </tr>
+            <!--stage presence-->
+            <tr>
+                <td><br><strong>Stage Presence</strong></td>
+            </tr>
+            <tr>
+                <td><form for="stagePresence">
+                    <select id="stagePresence" name="stagePresence">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form></td>
+                <td>Extremely confident,
+                    <br>comfortable, serious,
+                    <br>and performs with no
+                    <br>problems. This is an act
+                    <br>that engages the
+                    <br>audience at least 90% of
+                    <br>the time.</td>
+                <td>Performer(s) have few
+                    <br>problems performing.
+                    <br>Facial expressions and
+                    <br>body language seem
+                    <br>confident. This is an act
+                    <br>that engages the
+                   <br> audience at least 75% of
+                    <br>the time.</td>
+                <td>Performer(s) appear(s)
+                    <br>somewhat uncomfortable.
+                    <br>Lack of confidence and
+                    <br>nerves may yield some
+                    <br>problems during
+                    <br>performance. Audience
+                    <br>engaged at least 50% of
+                    <br>the time.</td>
+                <td>Performer(s) is/are
+                    <br>visibly uncomfortable
+                    <br>and nervous. Audience
+                    <br>is engaged less than
+                    <br>50% of the time.</td>
+            </tr>
+            <!--performance/preparation-->
+            <tr>
+                <td><br><strong>Performance/Preparation</strong></td>
+            </tr>
+            <tr>
+                <td><form for="perfPrep">
+                    <select id="perfPrep" name="perfPrep">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form></td>
+                <td>Outstanding preparation
+                    <br>is evident. Performance
+                    <br>was well- rehearsed,
+                    <br>seamless, from memory,
+                    <br>and included all
+                    <br>necessities/props.</td>
+                <td>A little more preparation
+                    <br>and practice would
+                    <br>make this performance
+                    <br>excellent.</td>
+                <td>This performance needs a
+                    <br>little more practice.
+                    <br>Participant(s) experienced
+                    <br>some difficulty during
+                    <br>performance due to lack of
+                    <br>preparation.</td>
+                <td>Obvious problems due
+                    <br>to lack of preparation.
+                    <br>This performance is still
+                    <br>a work in progress and
+                    <br>not ready to perform
+                    <br>live.</td>
+            </tr>
+            <!--creativity-->
+            <tr>
+                <td><br><strong>Creativity</strong></td>
+            </tr>
+            <tr>
+                <td><form for="creativity">
+                    <select id="creativity" name="creativity">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form></td>
+                <td>Performance is unique,
+                    <br>exciting, and extremely
+                    <br>creative. Special touches
+                    <br>make it
+                    <br>memorable/impactful.</td>
+                <td>Performance exhibits
+                    <br>creative aspects. Has
+                    <br>potential to be
+                    <br>memorable.</td>
+                <td>Performance exhibits
+                    <br>some creativity and may
+                    <br>be somewhat memorable.</td>
+                <td>Performance lacks
+                    <br>creativity and
+                    <br>innovation.
+                    <br>Performance not
+                    <br>special and is not
+                    <br>memorable.</td>
+            </tr>
+        </table>
+
+        <!--submit button-->
+        <br>
+        <br>
+        <form action="input.html" method="post"></form>
+            <input type="submit" value="Submit Scores">
+        </form>
     </main>
 
     <footer>
